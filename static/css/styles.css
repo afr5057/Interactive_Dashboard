@@ -1,19 +1,22 @@
 body{
-	background-color: white;
+	/* background-color: rgb(223, 255, 205); */
+	background-image: linear-gradient(rgb(188, 252, 252), rgb(2, 2, 26));
 }
 
 .jumbotron{
-	background: url('../images/banner.jpg');
+	/* background: url('../images/banner.jpg'); */
+	background-color:rgb(154, 176, 241);
 	min-height: 250px;
     background-size: cover;
-    color: white
+    color: white;
 }
 
 .custom-panel{
-	margin-top: 60px;
+	margin-top: 10px;
 }
 .panel-primary {
-    border-color: #e3e3e3;
+	border-color: #e3e3e3;
+	color: white;
 }
 .panel-primary>.panel-heading{
 	background-color:#333;
@@ -21,7 +24,7 @@ body{
 }
 
 .panel-body {
-    background-color: royalblue;
+    background-color: rgb(154, 176, 241);
 }
 
 .banner-text h1{
@@ -38,4 +41,8 @@ body{
 	font-weight: 500;
 	letter-spacing: 3px;
 	text-transform: uppercase;
+}
+
+.col-md-6{
+	margin-top: 20px;
 }

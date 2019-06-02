@@ -47,15 +47,15 @@ function buildCharts(sample) {
       marker: {
         size: sample_values,
         color: otu_ids,
-        colorscale: 'Portland',
+        colorscale: 'Rainbow',
         // COLORSCALE OPTIONS: Blackbody, Electric, Earth, Bluered, YlOrRd, YlGnBu, RdBu, Portland, Picnic, Jet, Hot, Greys, Greens, Rainbow
         type: 'scatter',
-        opacity: 0.2
+        
       }
     }];
     var bubbleLayout = {
-      title: 'Sample Frequency',
-      margin: { t: 0 },
+      title: '<b>Sample Frequency</b>',
+      margin: { t: 75 },
       hovermode: 'closest',
       xaxis: { title: 'OTU ID' },
     };
@@ -81,13 +81,19 @@ function buildCharts(sample) {
       type: 'pie',
       name: 'Top Ten Samples',
       marker: {
-        colors: ultimateColors[2],
+        colors: ultimateColors[0],
       }
     }];
 
     var pieLayout = {
-      margin: { t: 0, l: 0 },
+      margin: { t: 80, l: 0 },
+      title: {
+        text: "<b>Top 10 Samples</b>"
+      },
+      paper_bgcolor = 'rgba(0,0,0,0)',
+      plot_bgcolor = 'rgba(0,0,0,0)'
     }
+
 
     Plotly.plot('pie', pieData, pieLayout);
 
@@ -122,4 +128,3 @@ function optionChanged(newSample) {
 
 // Initialize the dashboard
 init();
-s

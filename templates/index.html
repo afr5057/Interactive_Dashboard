@@ -26,31 +26,33 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2 custom-papnel">
+      <div class="col-md-3 custom-panel">
         <div class="well">
           <h5>SELECT Sample:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Sample MetaData</h3>
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Sample MetaData</h3>
+            </div>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-9">
-        <div class="col-md-4">
-          <div id="pie"></div>
-          <!-- <div id="pie" style="height: 100px; width: 50%;"></div> -->
-        </div>
-        <div class="col-md-5">
-          <div id="gauge"></div>
+      <div class="row">
+        <div class="col-md-8">
+          <div id="bubble" style="background-color:#d3d3d3; height: 90%; width: 100%;"></div>
+          <!-- <div id="bubble"></div> -->
         </div>
       </div>
-    </div>
-    <div class="row">
       <div class="col-md-12">
-        <div id="bubble"></div>
+        <div class="col-md-6">
+          <div id="pie" style="height: 450; width: 100%;"></div>
+        </div>
+        <div class="col-md-6">
+          <div id="gauge" style="height: 100%; width: 100%;"></div>
+        </div>
       </div>
     </div>
   </div>
