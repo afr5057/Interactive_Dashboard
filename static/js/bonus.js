@@ -32,7 +32,7 @@ function buildGauge(wfreq) {
     {
         values: [50 / 6, 50 / 6, 50 / 6, 50 / 6, 50 / 6, 50 / 6, 50],
         rotation: 90,
-        text: ["8-9", "7-8", "6-7", "5-6", "4-5", "3-4", "2-3", "1-2", "0-1", ""],
+        // text: ["8-9", "7-8", "6-7", "5-6", "4-5", "3-4", "2-3", "1-2", "0-1", ""],
         textinfo: 'text',
         textposition: 'inside',
         marker: {
@@ -45,10 +45,11 @@ function buildGauge(wfreq) {
         hoverinfo: 'label',
         hole: .5,
         type: 'pie',
-        showlegend: false
+        showlegend: true
     }];
 
     var layout = {
+        margin: { t: 190, l: 5, r: 5, b: 5},
         shapes: [{
             type: 'path',
             path: path,
@@ -70,5 +71,5 @@ function buildGauge(wfreq) {
         }
     };
     var GAUGE = document.getElementById("gauge");
-    Plotly.newPlot(GAUGE, data, layout);
+    Plotly.newPlot(GAUGE, data, layout, {responsive: true});
 }

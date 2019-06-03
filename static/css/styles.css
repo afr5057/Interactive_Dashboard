@@ -1,19 +1,19 @@
 body{
-	/* background-color: rgb(223, 255, 205); */
 	background-image: linear-gradient(rgb(188, 252, 252), rgb(15, 63, 61));
 }
 
 .jumbotron{
 	background-color: rgba(0, 0, 0, 0);
 	min-height: 250px;
-    background-size: cover;
+	background-size: cover;
+	width: 100%;
 	color: white;
 	text-shadow: 2px 4px 4px black;
 }
 
 .custom-panel{
-	margin-top: 10px;
-	
+	margin-top: 0px;
+	margin-block-end: 2px;
 }
 .panel-primary {
 	background-color:rgb(15, 63, 61);
@@ -51,10 +51,21 @@ body{
 }
 
 .col-md-6{
-	margin-top: 20px;
-	background-color: rgba(0, 0, 0, 0);
+	margin-top: 20px !important;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+.row{
+	margin-top: 20px !important;
 }
 
 .btn {
-	background-color: rgb(15, 63, 61) !important;
+	color: black !important;
+	background-color: rgb(188, 252, 252) !important;
+}
+.svg-container{
+	position: relative;
+	width: 700px;
+	height: 450px;
+	background-color: rgba(0, 0, 0, 0) !important;
+	opacity: 30%;
 }

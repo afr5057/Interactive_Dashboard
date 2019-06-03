@@ -44,6 +44,7 @@ function buildCharts(sample) {
       y: sample_values,
       text: otu_labels,
       mode: 'markers',
+      // paper_bgcolor: rgb(188, 252, 252),
       marker: {
         size: sample_values,
         color: otu_ids,
@@ -55,12 +56,13 @@ function buildCharts(sample) {
     }];
     var bubbleLayout = {
       title: '<b>Sample Frequency</b>',
-      margin: { t: 75 },
+      // margin: { t: 70, l: 10, r: 10, b: 15},
+      // paper_bgcolor: rgb(188, 252, 252),
       hovermode: 'closest',
       xaxis: { title: 'OTU ID' },
     };
 
-    Plotly.plot('bubble', bubbleData, bubbleLayout);
+    Plotly.plot('bubble', bubbleData, bubbleLayout, {responsive: true});
 
     // @TODO: Build a Pie Chart
     // HINT: You will need to use slice() to grab the top 10 sample_values,
@@ -86,16 +88,14 @@ function buildCharts(sample) {
     }];
 
     var pieLayout = {
-      margin: { t: 80, l: 0 },
+      margin: { t: 70, l: 10, r: 5, b: 5},
       title: {
         text: "<b>Top 10 Samples</b>"
       },
-      // paper_bgcolor = 'rgba(0,0,0,0)',
-      // plot_bgcolor = 'rgba(0,0,0,0)'
     }
 
 
-    Plotly.plot('pie', pieData, pieLayout);
+    Plotly.plot('pie', pieData, pieLayout, {responsive: true});
 
   });
 }
