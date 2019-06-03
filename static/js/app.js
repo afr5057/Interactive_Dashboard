@@ -90,8 +90,8 @@ function buildCharts(sample) {
       title: {
         text: "<b>Top 10 Samples</b>"
       },
-      paper_bgcolor = 'rgba(0,0,0,0)',
-      plot_bgcolor = 'rgba(0,0,0,0)'
+      // paper_bgcolor = 'rgba(0,0,0,0)',
+      // plot_bgcolor = 'rgba(0,0,0,0)'
     }
 
 

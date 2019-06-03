@@ -5,7 +5,8 @@ body{
 
 .jumbotron{
 	/* background: url('../images/banner.jpg'); */
-	background-color:rgb(154, 176, 241);
+	/* background-color:rgb(154, 176, 241); */
+	background-color: rgba(0, 0, 0, 0);
 	min-height: 250px;
     background-size: cover;
     color: white;
